@@ -40,6 +40,7 @@ app.get(
  */
 app.get('**', (req, res, next) => {
   const { protocol, originalUrl, baseUrl, headers } = req;
+  console.log(req, 'req')
 
   commonEngine
     .render({
